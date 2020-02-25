@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">users</div> 
+        <!--이것과 아래의 css 설정은 같지만 위치가 다르게 되야하므로 class는 동일하게 설정하면서 id는 다르게 설정해놓는다.-->
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>        
+    </div>
+
+    <div class="results">
+        <p>Paper covers rock. You win!</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="rock.png" alt="">
+        </div>
+        
+        <div class="choice" id="p">
+            <img src="paper.png" alt="">
+        </div>
+        
+        <div class="choice" id="s">
+            <img src="scissor.png" alt="">
+        </div>
+    </div>
+
+    <p id="action-message">Make your move.</p>
+    
+    <button id="button">Reset!</button>
+</body>
+    <script src="app.js"></script>
+    <!--HTML이 모두 로드 되기 전에 자바스크립트 영역에서 HTML을 참고했기 때문에 계속 해서 addEventListener 에러가 발생했다 이 때문에 script 부분을 이쪽으로 옴겨주었다.-->
+</html>
