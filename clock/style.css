@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');/*orbitron font를 쓰기 위한 import*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ body{
+    background-image: url(timePattern.jpg);
+}
+.main{
+    background: lightgray;
+    width: 400px;
+    height: 175px;
+    margin: 100px auto; /*margin: 0 auto; 기본적인 중앙 정렬 속성*/
+    position: relative; /*main의 자식인 badge의 위치를 main에 맞추기 위함*/
+    padding:30px;
+}
+
+.badge{
+    width:90px;
+    background: orange;
+    color:white;
+    text-align: center;
+    padding: 5px 10px;
+    font-family:sans-serif;
+    font-weight: bold;
+    position: absolute; /*main에서 설정한 position을 끌어오기 위함*/
+    top:-15px; /*margin: -10px auto; 하면 되는거 아닌가? 라는 의문이 들 수도 있는데 margin 속성은 음수가 먹히지 않음.*/
+    left:40%;
+    
+}
+
+.clock{
+    background: wheat;
+    text-align: center;
+    font-size: 55px;
+    height:100%;
+    padding-top: 20px;
+    font-family: Orbitron;
+    border-radius: 15px;
+} 
