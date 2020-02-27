@@ -1,0 +1,96 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+}
+
+#container{
+    width:1000px;
+    height: 550px;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(sky.jpg); /*그냥 url(sky.jpg); 를 하게 되면 그대로의 사진이 나오는데
+    사실 배경이미지이다 보니 조금은 사진이 어둡게 들어오는 것이 좋다. 이 때문에 linear-gradient 요소를 사용한다.*/
+    margin:20px auto;
+}
+
+#calculator{
+    width: 320px;
+    height: 520px;
+    background-color: white;
+    margin:0 auto;
+    top:20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.3);
+}
+
+#result{
+    height:120px;
+}
+
+#history{
+    text-align: right;
+    height:20px;
+    margin:0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#output{
+    text-align: right;
+    height:60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+#keyboard{
+    height:400px;  
+}
+
+.operator, .number, .empty{
+    width:50px; /*width와 height를 잘 조절하면 float left라는 명령어만으로 한 줄에 4개의 버튼만이 들어가게 만들 수 있다.*/
+    height:50px;
+    margin:15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0; /*이게 없으면 위에 calculator tag의 box-shadow 때문에 버튼마다 그림자가 생기게 된다.*/
+}
+
+.number, .empty{
+    background-color: gainsboro;
+}
+
+.number, .operator{
+    cursor:pointer;
+}
+
+.operator:active, .number:active{
+    font-size:13px;
+}
+
+.operator:focus, .number.focus, .empty:focus{
+    outline:0;
+}
+
+button:nth-child(4){ /*4번째 버튼에 적용 할 css*/
+    font-size:20px;
+    background-color: #20b2aa;
+}
+
+button:nth-child(8){ /*8번째 버튼에 적용 할 css*/
+    font-size:20px;
+    background-color: #ffa500;
+}
+
+button:nth-child(12){ /*12번째 버튼에 적용 할 css*/
+    font-size:20px;
+    background-color: #f08080;
+}
+
+button:nth-child(16){ /*16번째 버튼에 적용 할 css*/
+    font-size:20px;
+    background-color: #7d93e0;
+}
+
+button:nth-child(20){ /*20번째 버튼에 적용 할 css*/
+    font-size:20px;
+    background-color: #9477af;
+}
+
