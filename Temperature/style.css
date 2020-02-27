@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+div{
+    height:33.33vh; /*div의 각 항목이 전체페이지의 1/3씩 가지도록 하기 위해서는 33.33vh가 필요.(33.33%는 안 먹힌다.)*/
+}
+
+input[type=number]{
+    width:100%;
+    height:100%; 
+    background-color: black;
+    color:white;
+    font-size:10em;
+    text-align: center;
+    font-family: Asap, sans-serif;
+}
+
+::placeholder{
+    color:#222222;
+}
